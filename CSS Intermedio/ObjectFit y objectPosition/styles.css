@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+img {
+    width: 400px;
+    height: 1200px;
+    /* hace que la imagen hace que entre por una vez a la resolucion que le dimos */
+    object-fit: contain;
+    /* deja la imagen tal cual es */
+    /* object-fit, se queda con el valor mas pequeño del ancho y alto */
+    object-fit: scale-down;
+    border: 2px solid #000;
+    margin-top: 50px;
+    margin-left: 50px;
+}

@@ -1,0 +1,77 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+div , body {
+    box-sizing: border-box;
+}
+/* principal star y end y center */
+.flexbox {
+    display: flex;
+    flex-flow: row wrap;
+    border: 2px solid #000;
+    margin: 20px;
+    /* start al principio, end seria al final */
+    /* center nos permite aliniar los elementos al centro */
+    /* space-between */
+    /* space-around hace que los elementos tengan una separacion igual */
+    /* space-evenly hace que todos las propiedades quedan de igual tamaño */
+    justify-content: center;
+}
+/* space-betwen */
+.flexbox2 {
+    display: flex;
+    flex-flow: row wrap;
+    border: 2px solid #000;
+    margin: 20px;
+    /* start al principio, end seria al final */
+    /* center nos permite aliniar los elementos al centro */
+    /* space-between */
+    /* space-around hace que los elementos tengan una separacion igual */
+    /* space-evenly hace que todos las propiedades quedan de igual tamaño */
+    justify-content: space-between;
+}
+/* space-around */
+.flexbox3 {
+    display: flex;
+    flex-flow: row wrap;
+    border: 2px solid #000;
+    margin: 20px;
+    /* start al principio, end seria al final */
+    /* center nos permite aliniar los elementos al centro */
+    /* space-between */
+    /* space-around hace que los elementos tengan una separacion igual */
+    /* space-evenly hace que todos las propiedades quedan de igual tamaño */
+    justify-content: space-around;
+}
+/* space-evenly */
+.flexbox4 {
+    display: flex;
+    flex-flow: row wrap;
+    border: 2px solid #000;
+    margin: 20px;
+    /* start al principio, end seria al final */
+    /* center nos permite aliniar los elementos al centro */
+    /* space-between */
+    /* space-around hace que los elementos tengan una separacion igual */
+    /* space-evenly hace que todos las propiedades quedan de igual tamaño */
+    justify-content: space-evenly;
+}
+
+.flex-item {
+    background-color: #800;
+    margin: 10px;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    width: 100px;
+    height: 50px;
+
+
+}
+.flex-item:first-child {
+    background-color: #d56;
+}
+.flex-item:last-child {
+    background-color: #000;
+}

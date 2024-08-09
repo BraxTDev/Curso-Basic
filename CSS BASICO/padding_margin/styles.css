@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    
+}
+div {
+
+    width: 200px;
+    height: 150px;
+    background: red;
+    padding: 50px;
+    /* forma con 2 padding vertical y el horizontal */
+    padding: 30px 30px;
+}
+.formulario {
+    background: red;
+    /* la forma mas sencilla */
+    padding: 10px 0 40px 20px;
+    /* seria la misma forma, que la tenemos arriba, ahorrando mas. */
+    padding-top: 10px;
+    padding-right: 0;
+    padding-bottom: 40px;
+    padding-left: 20px;
+}
+
+.formulario_input {
+    padding: 10px;
+    width: 100%;
+    background-color: black;
+    color: red;
+    /* Con el margin lo que estamos haciendo es que separamos las cajas, para que no queden pegadas entre ellas */
+    margin: 10px;
+
+}
+.formulario_submit {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: blue;
+    width: 50%;
+    color: white;
+}
+
+.box {
+    background: red;
+    height: 150px;
+    width: 150px;
+    /* Separar los elementos, lo que nosotros le indiquemos */
+    margin: 30px;
+    
+}
+
+.box1 {
+
+    background: rgb(4, 255, 0);
+    height: 150px;
+    width: 150px;
+    /* Siempre se queda con el mas grande, por el navegador determinado. */
+    margin-bottom: 50px;
+
+}
+
+.box2 {
+
+    background: rgb(132, 0, 255);
+    height: 150px;
+    width: 150px;
+    margin-top: 70px;
+
+}

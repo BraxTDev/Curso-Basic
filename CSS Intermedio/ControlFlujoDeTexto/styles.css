@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #efef;
+}
+
+.box {
+    width: 250px;
+    height: 50px;
+    margin: auto;
+    background-color: #fff;
+    border: 2px solid #000;
+    margin-top: 60px;
+    /* define como se comporta los espacios en blanco */
+    white-space: nowrap;
+    /* mostrar los 3 punticos suspensivos  */
+    text-overflow: ellipsis;
+    overflow: hidden;
+    
+}

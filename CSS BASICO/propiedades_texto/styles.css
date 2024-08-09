@@ -1,0 +1,39 @@
+
+/* Propiedades Basicas de texto */
+p {
+    color: rgb(226, 43, 43);
+    /* tipografia de la letra, con , podemos agregar otra tipografia por si la primera no funciona y asi sucesivamente. */
+    font-family: "font5";
+    font-size: 20px;
+    /* Si queremos poner algo en negrita ponemos el font-weight; bold; , ya que la etiqueta <b> ya no se usa casi */
+    /* definir el grosor de nuestra tipografias,  entre mas grande mas se notara */
+    font-weight: 100;
+    /* font-style, estilos de tipografias. */
+    font-style: italic;
+    /* text-aling - left izquierda , right derecha, center, al centro*/
+    text-align: left;
+    /* justify intenta que todos nos quede igual, que quede al principio */
+    text-align: justify;
+    /* text-decoration, lo pode usar para subrayar nuestro texto con varios estilos */
+    text-decoration: dotted;
+    /* line-heigth define el tamaño de nuestro parrafo */
+    line-height: 1.4;
+    /* Espacio entre Letras */
+    letter-spacing: 1px;
+    /* text-transform, quiero que todo mi texto se quede en mayuscula , uppercarse, capitalize*/
+    text-transform: uppercase;
+    /* word-wrap, me corta las palabras de mi parrafo */
+    word-wrap: break-word;
+}
+button {
+    letter-spacing: 3px;
+}
+/* ejemplo de line-through */
+span {
+    text-decoration: line-through;
+    color: black;
+}
+/* quitarle el subrayado a nuestro enlace, que es muy util  */
+a {
+    text-decoration: none;
+}

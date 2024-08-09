@@ -1,0 +1,221 @@
+/*  Estilos por defecto */
+* {
+    /* Establece el box-sizing para todos los elementos */
+    box-sizing: border-box;
+}
+
+body {
+    /* Quita el margen predeterminado del body */
+    margin: 0;
+    /* Establece la fuente Montserrat para el body */
+    font-family: 'Montserrat';
+    /* Define el color de fondo del body */
+    background-color: #D6EAF8;
+    /* Establece el color de texto con transparencia */
+    color: #101632dd;
+}
+/* Seleccionar un par de elementos */
+div, ul, nav, header, footer, a, li, label, body {
+    /* Elimina los márgenes y el padding de los elementos seleccionados */
+    margin: 0;
+    padding: 0;
+}
+/* --------HEADER SECTION------------ */
+.header {
+    /* Define el color de fondo del header */
+    background-color: #fff;
+    /* Configura el header para que use flexbox */
+    display: flex;
+    /* Espacio entre los elementos hijos del header */
+    justify-content: space-between;
+    /* Alinea los elementos hijos del header al centro */
+    align-items: center;
+    /* Define el tipo de contenedor para consultas de contenedor */
+    container-type: inline-size;
+    container-name: header;
+}
+.header__open-nav-button {
+    /* Define el color del botón de navegación */
+    color: #48e;
+    /* Tamaño de fuente del botón de navegación */
+    font-size: 3rem;
+    /* Peso de la fuente del botón de navegación */
+    font-weight: 600;
+    /* Posición absoluta del botón de navegación */
+    position: absolute;
+    /* Posiciona el botón de navegación a 10px del borde derecho */
+    right: 10px;
+}
+.header__nav-list {
+    /* Usa flexbox para la lista de navegación */
+    display: flex;
+    /* Direcciona los elementos en columna */
+    flex-direction: column;
+    /* Altura de la lista de navegación */
+    height: 40vh;
+    /* Centra la lista de navegación */
+    margin: auto;
+    /* Distribuye equitativamente el espacio entre los elementos hijos */
+    justify-content: space-evenly;
+}
+.header__nav {
+    /* Inicialmente oculta el menú de navegación */
+    display: none;
+    /* Color de fondo del menú de navegación */
+    background-color: #fff;
+    /* Posiciona el menú de navegación absolutamente */
+    position: absolute;
+    /* Altura del menú de navegación */
+    height: 100vh;
+    /* Ancho del menú de navegación */
+    width: 100vw;
+    /* Posiciona el menú en la parte superior */
+    top: 0;
+    /* Z-index para controlar el apilamiento */
+    z-index: -1;
+}
+
+.header__checkbox {
+    /* Oculta el checkbox que controla el menú */
+    display: none;
+}
+.header__checkbox:checked ~ .header__nav {
+    /* Muestra el menú de navegación cuando el checkbox está marcado */
+    display: flex;
+}
+
+.header__logo {
+    /* Ancho máximo del logo */
+    max-width: 100%;
+    /* Ancho específico del logo */
+    width: 64px;
+    /* Margen alrededor del logo */
+    margin: 10px 20px;
+}
+
+.header__nav-item {
+    /* Elimina los puntos de la lista de navegación */
+    list-style: none;
+}
+.header__nav-item a {
+    /* Color del texto de los enlaces de navegación */
+    color: #48e;
+    /* Elimina la subrayado de los enlaces de navegación */
+    text-decoration: none;
+}
+.header__nav-item a:hover {
+    /* Subraya los enlaces de navegación al pasar el cursor */
+    text-decoration: underline;
+}
+/* HEADER QUERIES */
+/* dispositivo moviles, adaptar el header */
+
+@container header (min-width: 600px) {
+    .header__nav {
+        display: block;
+        /* Ajusta la posición del menú de navegación */
+        position: static;
+        /* Ajusta el ancho del menú de navegación */
+        width: auto;
+        /* Ajusta la altura del menú de navegación */
+        height: auto;
+        /* Distribuye el espacio entre los elementos del menú de navegación */
+        justify-content: space-between;
+    }
+    .header__open-nav-button {
+        /* Oculta el botón de navegación en pantallas anchas */
+        display: none;
+    }
+    .header__nav-list {
+        /* Ajusta la altura de la lista de navegación */
+        height: auto;
+        /* Direcciona los elementos en fila */
+        flex-direction: row;
+        /* Ajusta la altura de la lista de navegación */
+        height: auto;
+        /* Ajusta el ancho de la lista de navegación */
+        width: auto;
+        /* Espacio entre los elementos de la lista de navegación */
+        gap: 20px;
+        /* Margen a la derecha de la lista de navegación */
+        margin-right: 40px;
+    }
+}
+
+/* HEADER END */
+
+/* PROFILE SECTION */
+
+
+.profile__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    background-color: #fff;
+}
+.profile__data-container {
+    max-width: 600px;
+    padding: 12px;
+}
+/* contenedor de la imagen */
+.profile__img-container {
+    max-height: 500px;
+    overflow: hidden;
+}
+
+.profile__img {
+    /* la hacemos responsive */
+    max-width: 100%;
+    width: 720px;
+}
+h1 {
+    color: #26a;
+}
+
+.profile__skill {
+    list-style: none;
+}
+.profile__skills-container h2 {
+    color: #26a;
+}
+.profile__skill {
+    list-style: none;
+    display: flex;
+    margin: 10px;
+    max-width: 600px;
+}
+
+.load_bar {
+    border: 2px solid #48e;
+    border-radius: 80px;
+    color: #fff;
+    font-size: 12px;
+    padding: 2px;
+    width: 80%;
+    margin: 4px;
+}
+
+.load-bar__bar {
+    background-color: #48e;
+    border-radius: 4px;
+    padding: 4px 6px;
+
+}
+
+.bar--80 {
+    width: 80%;
+    
+}
+.bar--60 {
+    width: 60%;
+}
+.bar--50 {
+    width: 50%;
+}
+.bar--90 {
+    width: 90%;
+}
+.bar--10 {
+    width: 10%;
+}

@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    background-color: #138D75 ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.card {
+    background: #212F3D ;
+    width: 300px;
+    text-align: center;
+    /* central la tarjeta, tecnica, si el contenedor, es un poco mas chico lo pone a la central, siempre lo pone en la mitad */ 
+    margin: auto;
+    margin-top: 40px;
+    box-shadow: 0px 0px 70px 0px red;
+    border-radius: 40px;
+}
+h1 {
+    padding-top: 15px;
+    font-size: 22px;
+    margin: 0;
+}
+h2 {
+    font-size: 13px;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+p {
+    font-size: 10px;
+    padding: 20px;
+    background: rgb(0, 0, 0);
+    text-align: justify;
+}
+img {
+    width: 200px;
+    margin: auto;
+    filter: drop-shadow(10px 20px 30px 40px);
+    background: red;
+}

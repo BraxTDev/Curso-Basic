@@ -1,0 +1,38 @@
+body {
+    background-color: rgb(239, 4, 4);
+    margin: 0;
+}
+
+.box {
+    width: 300px;
+    height: 400px;
+    /* Tipos de gradiantes */
+    background: linear-gradient(to left, #000 , transparent);
+    border-radius: 7px;
+    margin: auto;
+    margin-top: 20px;
+    border-top: 6px solid #900 ;
+}
+h1 {
+    margin: 0;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+img {
+    width: 300px;
+
+}
+/* grandiante radial-gradient */
+.box2 {
+    width: 300px;
+    height: 400px;
+    /* Tipos de gradiantes */
+    background: radial-gradient( #03c610 ,blue, red, pink, orange);
+    border-radius: 7px;
+    margin: auto;
+    margin-top: 20px;
+    border-top: 6px solid #900 ;
+   
+}

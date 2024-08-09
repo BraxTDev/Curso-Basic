@@ -1,0 +1,28 @@
+/* Siempre se debe tener en archivos separados. */
+/* seleccionar elemnentos, por el nombre */
+/* Selector element, lo seleccionamiento por elemento con este caso P */
+p {
+    color: #27AE60;
+    /* Tamaño de letra. */
+    font-size: 30px;
+    
+}
+li {
+    color: blue;
+}
+/* Seleccionar elementos */
+span {
+    color: red;
+}
+/* Class darle un nombrecito muy puntual a nuestro elementos */
+/* podemos ponerle la clase al mismo elemento. */
+
+.faltante {
+    color: aqua;
+}
+
+/* Selectores pod ID, que solo se le puede dar a un ID, por pagina, este elemento va tener un identificador unico */
+
+#secreto {
+    color: #27AE60;
+}

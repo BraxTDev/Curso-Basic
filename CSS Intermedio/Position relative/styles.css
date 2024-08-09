@@ -1,0 +1,36 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    color: white;
+    /* Position relative */
+    /* lo que podemos hacer es mover la caja, con el position relative donde queramos */
+    /* Puedo moverme visualmente a donde quiera */
+    /* la caja sigue posicionada en el mismo lugar, va pensar que la caja se mantiene ahi, pero ahora con el position relative, la podemos mover */
+    position: relative;
+    /* la propiedad que viene por defecto es position static */
+    
+}
+
+.box--blue {
+    background-color: blue;
+    /* de arriba hacia abajo */
+    top: 30px;
+    /* izquierda */
+    right: 50px;
+    /* derecha, siempre le da prioridad a left, antes de rigth*/
+    left: 40px;
+    /* de abajo hacia arriba, bottom tiene mas prioridad que top */
+    bottom: 30px ;
+    /* z.index, nos permite mover el elemento en la capa */
+    /* La caja queda por arriba del la otra caja con la funcion z-index */
+    /* Pone cajas mas adelante, se recomienda poner en 10 en 10 */
+    z-index: 10;
+}
+.box:first-child {
+    top: 150px;
+    left: 40px;
+    background-color: red;
+    z-index: 30;
+
+}

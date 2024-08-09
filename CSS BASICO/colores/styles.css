@@ -1,0 +1,10 @@
+
+.box {
+    width: 100px;
+    height: 100px;
+    /* Forma RGBA */
+    /* background: rgba(111, 196, 162, 0.42) */
+    /* hexadecimal, definir los 3 valores */
+    /* background: #00ffee; */
+    background: hsla(0, 94%, 43%, 0.938);
+}

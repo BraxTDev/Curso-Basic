@@ -1,0 +1,37 @@
+/* repeat evitar repetir las mismas expresiones */
+/* para darle un minimo o un maximo a una columna */
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.grid {
+    display: grid;
+    /* metodo repeat, nos dice cuantas veces vas a repetir la expresion */
+    /* nos repetir lo que queramos */
+    /* se coloca toda la columna completa */
+    /* grid-template-columns: 200px 100px minmax(100px, 400px) minmax(200px, 200px) minmax(100px, 100px) minmax(100px, 400px); */
+    /* ahora con el metodo repeat podemos simplificar el codgio de arriba */
+    /* 100px minimo de 100px y un maximo de 300px */
+    /* columnas */
+    grid-template-columns: repeat(3, minmax(100px, 300px) 1fr);
+    /* filas */
+    grid-template-rows: repeat(2, 200px) 1fr;
+}
+.grid-item {
+    background-color: #48e;
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    color: #fff;
+    border: 2px solid #000f;
+    
+    
+}
+.grid-item:last-child {
+    background-color: red;
+}
+.grid-item:first-child {
+    background-color: red;
+}

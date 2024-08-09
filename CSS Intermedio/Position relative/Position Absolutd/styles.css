@@ -1,0 +1,35 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #ededed;
+    text-align: center;
+}
+.container {
+
+    border: 2px solid #000;
+    margin: 20px;
+    position: relative;
+    height: 200px;
+}
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #db7;
+    color: white;  
+}
+
+.box--blue {
+    background-color: #48e;
+    /*  lo primero que haces es que ya no ocupa lugar en la pagina */
+    /*  la caja azul esta encima de la roja, la azul ya no ocupa el lugar */
+    /* position absolute tiene 3 propiedad, top, botton y rigth, no son sobre si mismo, son relativas, todos los costados de todas las paginas */
+    position: absolute;
+    top: 40px;
+    z-index: 20;
+}
+
+.box--red {
+    background-color: #f64;
+    position: relative;
+    z-index: 30;
+}

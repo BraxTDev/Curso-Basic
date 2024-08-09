@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    height: 100vh;
+}
+
+.box {
+    color: rgb(1, 1, 1);
+    width: 120px;
+    height: 120px;
+    background-color: red;
+    margin-top: 50px;
+    /* definir la propiedad: */
+    /* propiedad de la transicion */
+    transition-property: left;
+    /* tiempo de la transicion */
+    transition-duration: 1s;
+    /* ease ease-in  ease-in-out  ease-out*/
+    /* curva https://cubic-bezier.com/#.17,.67,.83,.67 */
+    transition-timing-function: ease-in;
+    /* cuanto va a tardar? */
+    position: relative;
+    left: 0;
+    
+}
+
+body:hover .box {
+    left: 400px;
+
+}

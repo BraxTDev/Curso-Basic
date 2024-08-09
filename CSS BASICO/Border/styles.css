@@ -1,0 +1,32 @@
+div {
+    background: red;
+    margin: auto;
+    width: 150px;
+    text-align: center;
+}
+
+div {
+    /* border-width: 5px;
+    border-color: black;
+    border-style: solid; */
+    /* border-radius, para saber cuanto queremos redondearlo */
+    border-radius: 20px;
+    /* Esta propieda remplaza las 3 de arriba */
+
+    /* border: 10px,  solid, rgb(14, 173, 61); */
+/* Arriba-top */
+/* simplificada, border-top 5px solid blue */
+    border-top-width: 5px;
+    border-top-style:solid;
+    border-top-color: blue;
+    /* bajo, bottom */
+    /* simplificada border-bottom 5px solud blue */
+    border-bottom-width: 4px ;
+    border-bottom-style: solid ;
+    border-bottom-style: black ;
+}
+
+.card1 {
+    background-color: aqua;
+    border-radius: 40px 2px 0 3px;
+}

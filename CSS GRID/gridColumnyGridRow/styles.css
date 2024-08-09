@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+body, div {
+    box-sizing: border-box;   
+}
+
+.grid {
+    display: grid;
+    /* si la resolusion entra otra columna, viendo si tiene 150px, estirar los elementos */
+    /* crear columnas para ir rellenando */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: 1fr; 
+    grid-auto-columns: 1fr;
+    grid-auto-flow: row;
+    gap: 10px;
+    padding: 10px;
+}
+.grid-item {
+    background-color: #48e;
+    font-size: 20px;
+    max-width: 100%;
+    border-radius: 18px;
+}
+/* seleccionando el primer elemento */
+/* agrandar una imagen mas que las otras */
+/*  */
+.grid-item:first-child {
+    /* arranca de 1 */
+    /* se pone la imagen en un contenedor, galeria */
+    /* con el span hacemos que podemos mover nuestra imagen donde queramos */
+    /* grid-column 1/span2, simplificamos  */
+    /* grid-row 2/span2; */
+    grid-column-start: 3;
+    grid-row: 1;
+    grid-column-end: span 2;
+    grid-row-end: span 2;
+}
+.grid-item:hover {
+    opacity: 0.78;
+    
+}

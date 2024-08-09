@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #ccc;
+    
+}
+
+.box {
+    width: 220px;
+    height: 220px;
+    background-color: #fff;
+    position: relative;
+    left: 0;
+    margin: auto;
+    margin-top: 50px;
+    border: 2px solid black;
+    /* por defecto viene visible con esta propiedad tenemos 4 oportunidad */
+    /* overflow: hidden; 1 opcion */
+    /* overflow: scroll; */
+    /* forma de ocultar el scroll */
+    overflow-y: scroll;
+    /* para que se ajuste si el quitamos el texto que se desborda del mismo, para que el contenido se ajuste */
+    overflow: auto;
+    
+}

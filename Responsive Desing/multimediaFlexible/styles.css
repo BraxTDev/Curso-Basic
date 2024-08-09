@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+div, body {
+    box-sizing: border-box;
+}
+
+img {
+    /* Si tenemos un contenedor maas pequeño se va adaptar, pero si es mas grande se mantiene */
+    max-width: 100%;
+    height: auto;
+}
+.contenedor {
+    max-width: 100%;
+    aspect-ratio: 16/9;
+    margin: auto;
+}
+video {
+    max-width: 100%;
+    height: 600px;
+}

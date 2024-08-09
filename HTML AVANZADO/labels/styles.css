@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    background: papayawhip;
+}
+
+form {
+    width: 11px;
+    margin: auto;
+    height: 20PX;
+    margin-top: 40px;
+
+}
+
+label {
+    text-align: center;
+    padding: 15px;
+    color: rgb(255, 0, 0);
+    letter-spacing: 6px;
+    text-shadow: 1px 0px 20px;
+
+}
+

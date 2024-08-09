@@ -1,0 +1,18 @@
+section .elemento1,
+section .elemento2,
+section .elemento3 {
+    color: red;
+}
+/* el is lo que hace es agrupar los elementos */
+section:is(.elemento1,.elemento2,.elemento3) {
+    color: blue;
+}
+/* ejemplo, nos ahorramos mas con esta nueva funcion de is*/
+
+section:where(.elemento1) {
+    color: rgb(52, 226, 43);
+}
+/* verificar que tenga algo */
+section:has() {
+
+}

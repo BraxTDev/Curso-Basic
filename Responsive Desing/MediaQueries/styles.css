@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+div, body {
+    box-sizing: border-box;
+}
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 0;
+    min-width: 300px;
+}
+.flex-item {
+    padding: 30px;
+    background-color: #ccc;
+    border: 1px solid red;
+}
+/* and conecta condiciones */
+@media screen and  (max-width:480px) {
+    .flexbox {
+        flex-direction: column;
+    }
+}

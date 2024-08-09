@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+div, body {
+    box-sizing: border-box;
+}
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 400px;
+    justify-content: center;
+    margin: auto;
+    max-width: 600px;
+}
+.bloque {
+    display: inline-block;
+    /* con max-width de achica  */
+    min-width: 200px;
+    /* se adapta el contenido que ponemos y cuando lo encerramos  */
+    
+    background-color: #7bf;
+    margin: auto;
+    flex: 1;
+    font-size: 12px;
+    padding: 10px;
+    margin: 4px;
+
+    
+}

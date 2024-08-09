@@ -1,0 +1,29 @@
+body {
+    background: black;
+}
+td, th {
+    border: 2px solid rgb(176, 156, 156);
+    padding: 4px;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px ;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 13px;
+    width: 350px;
+    margin: auto;
+    text-transform: uppercase;
+    border-spacing: 12px;
+}
+
+table {
+    width: 100%;
+    border: 8px solid white;
+    border-radius: 7px;
+    max-width: 500px;
+    max-height: 500px;
+    margin: auto;
+    margin-top: 80px;
+    border-spacing: 6px;
+
+}

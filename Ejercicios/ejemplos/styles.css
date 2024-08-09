@@ -1,0 +1,37 @@
+.card {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    display: inline-block;
+    margin: auto;
+    margin: 20px;
+    box-sizing: border-box;
+}
+
+.card2{
+    
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        display: inline-block;
+        margin: auto;
+        margin: 20px;
+        box-sizing: border-box;
+    
+}
+
+.card3{
+    
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    display: inline-block;
+    margin: auto;
+    margin: 20px;
+    box-sizing: border-box;
+
+}
+
+
+
+

@@ -1,0 +1,7 @@
+img {
+    width: 400px;
+    height: 200px;
+    margin: auto;
+    border: 1px solid black;
+    box-shadow: 0 0 40px 0 black;
+}

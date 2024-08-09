@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.grid {
+    display: grid;
+    height: 80vh;   
+    /* hace que todo el contenido entre, y que todos los espacio estan ocupado con las medidas correspondientes, ese espacio lo vamos a distribuir */
+    /* se usa mas fr que auto, porque distribuye casi igual */
+    grid-template-columns: 2fr 3fr 5fr;
+    grid-template-rows: auto auto ;
+}
+.grid-item {
+    background-color: #48e;
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    color: #fff;
+    border: 2px solid #000f;
+    display: inline-block;
+    
+}

@@ -1,0 +1,19 @@
+body {
+    color: blueviolet;
+    font-family: sans-serif;
+}
+
+div {
+    font-family: sans-serif;
+}
+
+div {
+    width: 50%;
+}
+h1 {
+    color: red;
+}
+h1 {
+    color: inherit;
+    width: inherit;
+}

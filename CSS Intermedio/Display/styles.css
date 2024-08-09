@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+}
+div {
+    padding: 20px;
+    background-color: #999;
+}
+
+a {
+    background-color: red;
+    color: #fff;
+    /* Display-block */
+    /* A se combirtio en un bloque, trae por defecto elementos en linea, se vuelven en bloque, que ocupe todo el ancho disponible  */
+    /* ocupa todo el ancho disponible,  */
+    /* los elementos se rompen cuando le quitamos el display, block */
+    /* padding y margin afectan el contenido del elemento */
+    display: block;
+    border: 2px solid #000;
+    margin: 20px;
+    padding: 20px;
+}
+/* que sea inline el texto, el margin que acepta es horizontal */
+/* padding y margin solo funciona en linea, cuando le ponemos el metodo display-inline */
+p {
+    background-color: #000;
+    color: #fff;
+    display: inline;
+    margin: 5px;
+    padding: 20px;
+    /* no recibe ni ancho ni alto con el inline- display */
+    width: 500px;
+    height: 500px;
+}
+/* nav-li-ul metodo BEM */
+.nav {
+    background-color: #483;
+}
+.nav__list {
+    margin: 0;
+}
+/* display inline-block, mescla de inlinia y bloque, se pueden apilar y ocupan todo el ancho */
+.nav__item {
+    display: inline-block;
+}
+.nav__links {
+    color: #fff;
+    /* quitale la linea al a */
+    text-decoration: none;
+}

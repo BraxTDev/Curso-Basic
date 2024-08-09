@@ -1,0 +1,32 @@
+/* un estilo, solamente tenga este atributo signo de $, puede arrancar con algo, termia con png termina con*/
+/* ^ con el nombre y el atributo, nos funciona arranca con */
+/* seleccionar por atributo */
+/* SELECTOR POR ATRIBUTO */
+img[src="/img/channels4_profile.jpg"] {
+    width: 100;
+}
+/*  estamos diciendo que nos ponga el atributo UL, dentro de todos los otros atributos que ese ul tiene dentro que en este caso serian los li*/
+/* COLOR DESCENDIENTE */
+ul li {
+    color: blue;
+}
+/* darle estilo a un hijo directo, ya en este caso el strong es hijo del li y no difectamente del ul, porque esta dentro del li */
+/* con ul no funciona, porque no es el hijo directo, si no digamos el abuelo, entonces el papa seria li */
+/* SELECTOR POR HIJO DIRECTO */
+li > strong {
+    color: red;
+}
+/* SELECTOR ADYACENTE */
+
+/* voy a dar estilos a un P, despues de que este de un h1, en este caso se nos seleciono el p que esta despues del h1 */
+h1 + p {
+    color: blueviolet;
+}
+
+/* SELECTOR DE HERMANOS GENERALES */
+
+/* porque aca le vamos a dar a todos los p, despues que venga despues de un h1, darle todos los a todos los elementos p despues de que vengan de un h1  */
+/* seleccionamos a todos los p, que vengan despues de un h1 o que tengan de hermano un h1 */
+h1 ~ p {
+    color: orange;
+}

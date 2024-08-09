@@ -1,0 +1,42 @@
+div {
+    padding: 20px;
+}
+/* Hacemos que la primera letra que coloque del color que queremos */
+
+h1::first-letter {
+    color: red;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 3em;
+    letter-spacing: -8px;
+}
+div::first-line {
+    color: red;
+    font-weight: bold;
+    
+}
+div::selection {
+    background-color: red;
+    color: white;
+}
+input::placeholder {
+    color: green;
+    background-color: black;
+    padding: 20px;
+}
+
+li::marker {
+    color: red;
+
+}
+
+li::before {
+    content: "texto antes";
+    color: red;
+
+}
+
+li::after {
+    content: "texto despues";
+    color: blue;
+}

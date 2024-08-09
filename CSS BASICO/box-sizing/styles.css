@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+}
+
+.box {
+    
+    width: 30px;
+    height: 30px;
+    background: red;
+    margin: 10px;
+}
+.box-default {
+    box-sizing: border-box;
+    padding: 25px;
+    border: 10px solid black;
+    
+   
+}
+/* Nueva caja, con box-sizing */
+.box-new {
+    /* forma moderna del calculo de caja, el contenido lo vamos ajustar */
+    /* cuando yo defina el ancho y el alto, quiero que defina para esta seccion */
+    box-sizing: border-box;
+    padding: 30px;
+    border: 10px solid black;
+
+}

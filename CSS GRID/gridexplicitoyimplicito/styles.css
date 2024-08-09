@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+body, div {
+    box-sizing: border-box;   
+}
+
+.grid {
+    display: grid;
+    height: 80vh;
+    grid-template-columns: repeat(3,200px);
+    grid-template-rows: repeat(3, 200px);
+    /* propieda nueva, lo que hacemos que tengan 200px, todas las filas tienen 200px, es porque grid, */
+    /* se definen el tamaño de las filas que se crear automaticamente */
+    /* definimos el con el auto rows las filas  */
+    grid-auto-rows: 150px;
+    /* con el column definimos las columnas que va tener  */
+    grid-auto-columns: 150px; 
+    /* podemos ponerte en posiicon de columna y todo lo que crees son columnas, vas a seguir la direccion de columna */
+    /* vas a agregar, en columnas */
+    /* se utilizar en row o en column, que cada que se cree un elemento nuevo de defina en column o rows con esta propiedad */
+    grid-auto-flow: column;
+    border: 3px solid;
+}
+.grid-item {
+    background-color: #48e;
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    color: #fff;
+    border: 2px solid #000f;
+    display: inline-block;
+    
+}

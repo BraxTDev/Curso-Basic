@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #000;
+}
+
+.grid {
+    display: grid;
+    /* quiero que me digas cuantas columnas queres tener */
+    /* se agrega otra columna mas */
+    grid-template-columns: 100px 200px 300px;
+    /*  la primera fila va tener 100px de alto y 300 de ancho */
+    /* podemos trabajar con colums y con rows */
+    grid-template-rows: 400px 200px;
+}
+.grid-item {
+    background-color: #48e;
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    color: #fff;
+    border: 2px solid #000f;
+    display: inline-block;
+    border-radius: 30px;
+    box-shadow: 0px 0px 14px #fff;
+}

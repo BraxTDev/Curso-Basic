@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodologia BEM</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Se componene de bloquemos, modificadores y elementos -->
+    <!-- crear una base, estilo definido y no volver a escribir el codigo de una vez -->
+    <!-- Reutilizar codigo, problemas de especificidad -->
+    <!-- Saber como escribir codigo, para saber solo viendolas saber que signifca -->
+    <!-- Codigo mas legible, bloque, elemento y modificadores-->
+    <!-- modificadores, modificar muchos elementos o un bloque sea diferente -->
+    <h1>INGREDIENTS</h1>
+    <!-- Metodo BEM -->
+    <!-- agregar clase modificadora para los elementos que queramos seleccionar en la lista -->
+    <ul class="lista">
+        <li class="lista__item item--danino">Sal</li>
+        <li class="lista__item">Sal</li>
+        <li class="lista__item item--importante">Sal</li>
+        <li class="lista__item">Sal</li>
+    </ul>
+    <!-- le agregamos la clase modificadora que en esta caso es lista--vieja -->
+    <ul class="lista lista--vieja">
+        <li class="lista__item item--danino">Sal</li>
+        <li class="lista__item">Sal</li>
+        <li class="lista__item item--importante">Sal</li>
+        <li class="lista__item">Sal</li>
+    </ul>
+    <ul class="lista lista--nueva">
+        <li class="lista__item item--danino">Sal</li>
+        <li class="lista__item">Sal</li>
+        <li class="lista__item item--importante">Sal</li>
+        <li class="lista__item">Sal</li>
+    </ul>
+    
+    
+</body>
+</html>

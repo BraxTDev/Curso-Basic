@@ -1,0 +1,74 @@
+/* Selecciona al elemento raiz */
+:root {
+    color: #00f;
+}
+h1 {
+    color: aqua;
+    font-family: sans-serif;
+}
+/* Cuando pasamos el mouse por encima del H1 */
+h1:hover {
+    color: black;
+    background: red
+}
+/* definir el color de un elemento cuando le damos click encima del H1 */
+h1:active {
+    color: blue;
+    background-color: #999;
+}
+/* seleccionando el primer LI */
+li:first-child {
+    color: red;
+}
+/* seleccionando al segundo li, seleccionando depediendo en la posicion que esten. */
+li:nth-child(2) {
+    color: rgb(0, 17, 255);
+}
+/* seleccionando el ultimo li */
+li:last-child {
+    color: rgb(10, 235, 32);
+}
+/* modificando un elemento si y otro no, y asi sucesivamente */
+li:nth-child(2n){
+    color: #00f;
+}
+/* seleccionando los li dentro de "lista" pero que no tengan la clase "excluir" */
+
+.lista li:not(.excluir) {
+    color: red;
+}
+
+div {
+    border: 2px solid black;
+}
+/* seleccionando el DIV en caso de estar vacio */
+div:empty {
+    border: none;
+}
+
+input[type="checkbox"] {
+    margin: 50px;
+}
+input[type="checkbox"]:checked {
+    margin: 0;
+}
+
+/* SELECCIONANDO ENLACES NO VISITADOS*/
+a:link {
+    color: red;
+}
+
+
+/* SELECCIONANDO ENLACES VISITADOS */
+a:visited {
+    color: green;
+}
+/* seleccionando inputs validos */
+input:valid {
+
+    color: green;
+}
+/* SELECCIONANDO INPUTS INVALIDOS */
+input:invalid {
+    color: red;
+}
